@@ -9,7 +9,7 @@ use Drupal\Core\Controller\ControllerBase;
  */
 class ExampleController extends ControllerBase
 {
-    const VERSION = '0.2.0';
+    const VERSION = '0.3.0';
 
     /**
      * {@inheritdoc}
@@ -17,11 +17,17 @@ class ExampleController extends ControllerBase
     public function content()
     {
         $build = [
-            '#type' => 'markup',
-            '#markup' => t('Hello World @version! (@time)', [
-                '@version' => ExampleController::VERSION,
-                '@time' => date('c'),
-            ]),
+            'hello' => [
+                '#type' => 'markup',
+                '#markup' => t('Hello World @version!', [
+                    '@version' => ExampleController::VERSION,
+                ]),
+            ],
+            'time' => [
+                                '#markup' => date('c'),
+                '#prefix' => '<pre>',
+                '#suffix' => '</pre>',
+            ],
             '#cache' => ['max-age' => 0],
         ];
         return $build;
