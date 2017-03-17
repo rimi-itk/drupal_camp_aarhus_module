@@ -24,7 +24,7 @@ class ExampleController extends ControllerBase
                 ]),
             ],
             'time' => [
-                                '#markup' => date('c'),
+                '#markup' => date('c'),
                 '#prefix' => '<pre>',
                 '#suffix' => '</pre>',
             ],
