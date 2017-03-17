@@ -9,7 +9,7 @@ use Drupal\Core\Controller\ControllerBase;
  */
 class ExampleController extends ControllerBase
 {
-    const VERSION = '1.0.0';
+    const VERSION = '1.0.2';
 
     /**
      * {@inheritdoc}
