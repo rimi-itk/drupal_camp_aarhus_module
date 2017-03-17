@@ -1,0 +1,7 @@
+drupal_camp_aarhus:
+  path: /drupal_camp_aarhus
+  defaults:
+    _controller: '\Drupal\drupal_camp_aarhus\Controller\ExampleController::content'
+    _title: 'Drupal Camp Aarhus'
+  requirements:
+    _permission: 'access content'

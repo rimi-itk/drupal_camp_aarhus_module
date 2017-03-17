@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains drupal_camp_aarhus.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function drupal_camp_aarhus_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the drupal_camp_aarhus module.
+    case 'help.page.drupal_camp_aarhus':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('An example module') . '</p>';
+      return $output;
+
+    default:
+  }
+}

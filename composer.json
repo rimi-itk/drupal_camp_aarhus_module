@@ -1,0 +1,14 @@
+{
+  "name": "drupal/drupal_camp_aarhus",
+  "type": "drupal-module",
+  "description": "An example module",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://github.com/rimi-itk/drupal_camp_aarhus_module",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://github.com/rimi-itk/drupal_camp_aarhus_module/issues",
+    "source": "https://github.com/rimi-itk/drupal_camp_aarhus_module"
+  },
+  "require": { }
+}
