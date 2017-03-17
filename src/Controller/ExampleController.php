@@ -9,7 +9,7 @@ use Drupal\Core\Controller\ControllerBase;
  */
 class ExampleController extends ControllerBase
 {
-    const VERSION = '0.1.0';
+    const VERSION = '0.2.0';
 
     /**
      * {@inheritdoc}
@@ -18,7 +18,11 @@ class ExampleController extends ControllerBase
     {
         $build = [
             '#type' => 'markup',
-            '#markup' => t('Hello World @version!', ['@version' => ExampleController::VERSION]),
+            '#markup' => t('Hello World @version! (@time)', [
+                '@version' => ExampleController::VERSION,
+                '@time' => date('c'),
+            ]),
+            '#cache' => ['max-age' => 0],
         ];
         return $build;
     }
